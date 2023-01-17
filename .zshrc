@@ -37,7 +37,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Alias
 alias ll='ls -la'
-
+alias ...='cd ../../'
+alias ....='cd ../../../'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
