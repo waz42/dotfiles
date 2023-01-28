@@ -6,6 +6,9 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
+#display japanese file name
+setopt print_eight_bit
+
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
