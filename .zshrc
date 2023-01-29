@@ -42,4 +42,4 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 alias ll='ls -la'
 alias ...='cd ../../'
 alias ....='cd ../../../'
-
+alias vi='nvim'
