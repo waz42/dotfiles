@@ -40,10 +40,13 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Alias
 alias ll='ls -la'
+alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias vi='nvim'
 
+alias gs='git status'
+alias gl='git log'
 
 # git-promptの読み込み
 source ~/.zsh/git-prompt.sh
