@@ -1,3 +1,15 @@
+#################
+## zsh設定ファイル（.zshrc）を分割する
+##################
+
+ZSHHOME="${HOME}/dotfiles/.zsh.d"
+
+if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
+   for i in $ZSHHOME/*; do
+       [[ ${i##*/} = *.zsh ]] && [ \( -f $i -o -h $i \) -a -r $i ] && . $i
+   done
+fi
+
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -37,16 +49,6 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-
-# Alias
-alias ll='ls -la'
-alias ..='cd ../'
-alias ...='cd ../../'
-alias ....='cd ../../../'
-alias vi='nvim'
-
-alias gs='git status'
-alias gl='git log'
 
 # git-promptの読み込み
 source ~/.zsh/git-prompt.sh
