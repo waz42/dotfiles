@@ -15,3 +15,7 @@ set incsearch
 " 1: ウィンドウの数が2以上のときのみ表示
 " 2: 常に表示
 set laststatus=2
+
+"tab入力でスペース４つ分入力
+set expandtab
+retab 4
