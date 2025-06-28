@@ -1,7 +1,7 @@
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ll='ls -la'
-
+alias vi=vim
 
 # Git command
 alias gs='git status'
