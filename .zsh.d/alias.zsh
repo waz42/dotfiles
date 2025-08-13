@@ -9,3 +9,6 @@ alias ga='git add'
 alias gc='git commit'
 alias glo='git log --oneline'
 alias gl='git log'
+
+# multipass 
+alias mp='multipass.exe'
