@@ -28,3 +28,8 @@ GIT_PS1_SHOWUPSTREAM=auto
 # Prompt
 #------------------------------------------
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
+
+#------------------------------------------
+# asdf Path
+#------------------------------------------
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
